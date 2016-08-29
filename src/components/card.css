@@ -1,0 +1,54 @@
+.card {
+  display:flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  border: 1px solid #efefef;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 1%;
+}
+
+.card-meta{
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-likes {
+    margin: 10px 20px 0px 20px;
+
+}
+
+
+
+
+.card-owner {
+  font-family: monospace;
+  font-weight: bold;
+  flex-basis: 80%;
+}
+
+
+.card-time {
+  flex-basis: 20%;
+  align-self: center;
+  color: #a2a2a2;
+}
+.card-title {
+  margin: 15px;
+  font-family: monospace;
+  align-self: center;
+}
+
+.card > img {
+  flex: 1 0 30px;
+}
+
+@media all and (min-width:600px){
+ 
+  .card {
+    flex-basis: 43%;
+  } 
+
+
+}

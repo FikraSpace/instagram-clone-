@@ -1,0 +1,12 @@
+.insert-comment > input {
+  
+  outline: none;
+  border: 0px;
+  width: 100%;
+
+}
+
+
+.insert-comment {
+  padding: 10px;
+}

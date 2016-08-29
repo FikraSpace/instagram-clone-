@@ -1,0 +1,26 @@
+nav ul {
+  display: flex;
+  list-style: none;
+  border: 1px solid rgba(0,0,0,.08);
+  background: #fff;
+  justify-content: center;
+  
+}
+
+li {
+  flex-basis: 20%;
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+li.logo {
+  flex: 5;
+  font-family: monospace;
+  font-size: 30px;
+  padding: 20px;
+  text-align: left;
+  align-self: center;
+
+}
+
