@@ -1,0 +1,36 @@
+.wrapper {
+  font-family: monospace;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.login-container > * {
+  flex: 1 0 100%;
+  margin: 5px;
+  height: 30px;
+}
+
+.login-container > input{
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  outline: none;
+  background: #fafafa;
+  padding: 0px 3px 0px 3px;
+}
+
+.login-container > button {
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  border-radius: 3px;
+  outline: none;
+  color: #3897f0;
+}
