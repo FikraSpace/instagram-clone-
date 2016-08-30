@@ -33,7 +33,11 @@ class App extends Component {
 
       snapshot.forEach((snapshot)=>{
         
-        tmpArr.push(snapshot.val())
+        let tmpObj = snapshot.val()
+
+        tmpObj.id = snapshot.key;
+
+        tmpArr.push(tmpObj)
 
       })
 
@@ -41,6 +45,8 @@ class App extends Component {
           posts: tmpArr
       })
 
+
+      console.log(tmpArr);
     })
 
   }

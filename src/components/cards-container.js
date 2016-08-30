@@ -12,7 +12,7 @@ class CardsContainer extends Component {
 
           {
             this.props.posts.map((elm, i)=>{
-              return <Card key={i} />
+              return <Card key={elm.id} elm={elm}/>
             })
           }
 
