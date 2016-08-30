@@ -9,8 +9,13 @@ class CardsContainer extends Component {
     return (
 
         <div className="cards-container">
-          <Card />
-          <Card />
+
+          {
+            this.props.posts.map((elm, i)=>{
+              return <Card key={i} />
+            })
+          }
+
         </div>
 
 

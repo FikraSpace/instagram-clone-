@@ -26,6 +26,7 @@ class App extends Component {
   componentWillMount(){
 
     let posts = firebase.database().ref('/posts');
+
     posts.on('value', (snapshot)=>{
       
       let tmpArr = [];
@@ -35,9 +36,10 @@ class App extends Component {
         tmpArr.push(snapshot.val())
 
       })
+
       this.setState({
           posts: tmpArr
-        })
+      })
 
     })
 
@@ -48,7 +50,7 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <CardsContainer />
+        <CardsContainer posts={this.state.posts} />
       </div>
     )
   }
